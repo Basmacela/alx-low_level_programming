@@ -6,7 +6,7 @@
  * @a: pointer 1
  * @b: pointer 2
  *
- * Return: Always 0.
+ * Return: nothing
 */
 
 	void swap_int(int *a, int *b);
