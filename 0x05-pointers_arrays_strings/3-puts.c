@@ -14,6 +14,7 @@ void _puts(char *str)
 
 	while (str[i])
 	{
+		int _putchar(char c);
 		_putchar(str[i]);
 		i++;
 	}
