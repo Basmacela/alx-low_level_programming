@@ -3,17 +3,18 @@
 /**
  * function that prints a string by new line
  *
- *@s: prints a string
+ *@s: pointer string
  *
  * Return: nothing
  *
 */
-void _puts(char *str);
+void _puts(char *str)
 {
 	int i =  0;
-	while (s[i])
+
+	while (str[i] != '\0')
 		i++;
-	
+
 	while (i--)
 	{
 		_putchar (s[i]);
