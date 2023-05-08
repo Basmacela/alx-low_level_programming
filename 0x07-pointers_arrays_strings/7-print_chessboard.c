@@ -1,22 +1,27 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_chessboard - prints chessboard.
+ * print_chessboard - prints the chess board
  * @a: pointer
- * Return: void
+ * Return: nothing
 */
 
 void print_chessboard(char (*a)[8])
 {
 	int i, g;
 
-	for (i = 0; i < 8; i++)
+	i = 0;
+	g = 0;
+	while (i < 64)
 	{
-		for (g = 0; g < 8; g++)
+		if (i % 8 == 0 && i != 0)
 		{
-			_putchar(a[i / 8][i - g]);
-		i++;
-		}
+			g = i;
 			_putchar('\n');
+		}
+
+		_putchar(a[i / 8][i - g]);
+		i++;
 	}
+	_putchar('\n');
 }
