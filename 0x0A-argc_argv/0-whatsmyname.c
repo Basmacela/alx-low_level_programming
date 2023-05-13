@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints its name, followed by a new line.
- * @argv: array that contains the program command line arguments.
+ * @argv: argument value
  * Return: 0 - success.
  */
 int main(int char *argv[])
