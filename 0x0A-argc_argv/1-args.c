@@ -2,7 +2,7 @@
 /**
  * main - prints the number of arguments passed into it.
  * @argc: arguments count
- * @argv: arguments count
+ * @argv: arguments value
  * Return: 0
 */
 int main(int char argc, char *argv)
