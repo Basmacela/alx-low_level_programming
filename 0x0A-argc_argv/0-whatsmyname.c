@@ -5,7 +5,7 @@
  * @argc: arguments count
  * Return: 0
 */
-int main(int argv, char **argc)
+int main(int argc, char **argv)
 {
         (void) argc;
 	printf("%s\n", argv[0]);
