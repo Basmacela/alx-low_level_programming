@@ -8,23 +8,31 @@
  * @argv: arguments value
  * Return: 0
 */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i, x, add = 0;
+	int i, n, sum = 0;
+	char *flag;
 
-	for (i = 1; i < argc; i++)
+	if (argc < 2)
 	{
-		for (x = 0; argv[i][x] != '\0'; x++)
-		{
-			if (!isdigit(argv[i][x]))
-			{
-				printf("Error\n");
-				return (1);
-			}
-			int atoi(const char *str);
-		}
-			add += atoi(argv[i]);
+		printf("0\n");
+		return (0);
 	}
-				printf("%d\n", add);
-				return (0);
+
+	for (i = 1; argv[i]; i++)
+	{
+		n = strtol(argv[i], &flag, 10);
+		if (*flag)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		else
+		{
+			sum += n;
+		}
+	}
+	printf("%d\n", sum);
+
+	return (0);
 }
