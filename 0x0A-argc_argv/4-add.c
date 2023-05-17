@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdio.h>
+#include <ctype.h>
+
 /**
  * main - adds positive numbers, followed by a new line
  * @argc: arguments count
@@ -22,7 +24,7 @@ int main(int argc, char *argv[])
 			int atoi(const char *str);
 		}
 			add += atoi(argv[i]);
-		{
+	}
 				printf("%d\n", add);
 				return (0);
 }
