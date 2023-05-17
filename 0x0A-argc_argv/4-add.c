@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 /**
  * main - adds positive numbers, followed by a new line
@@ -18,6 +19,7 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
+			int atoi(const char *str);
 		}
 			add += atoi(argv[i]);
 		{
