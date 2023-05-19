@@ -2,13 +2,12 @@
 
 /**
  * string_nconcat - a function that concatenates two strings.
- *
- * @s1: first char
- * @s2: secound char
+ * @s1: String 1
+ * @s2: String 2
  * @n: unsigned int
- *
- * Return: If the function fails, it should return NULL
+ * Return: a pointer of string
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int x, y, z;
